@@ -30,21 +30,7 @@ Open http://localhost:3000.
 
 ## Supabase Setup
 
-1. Create/update `.env.local` with your project values:
-
-```env
-DEBUG=false
-NEXT_PUBLIC_DEBUG=false
-NEXT_PUBLIC_SUPABASE_URL=https://alzmrfvotervtasywdsn.supabase.co
-NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=sb_publishable_wBBXwv2DOb3lwoSbc-vj8w_VsJAXk-S
-SUPABASE_SERVICE_ROLE_KEY=replace-with-your-supabase-service-role-key
-JWT_ACCESS_SECRET=change-this-to-a-long-random-access-secret
-JWT_REFRESH_SECRET=change-this-to-a-long-random-refresh-secret
-```
-
-`SUPABASE_SERVICE_ROLE_KEY` is required for backend routes that create/update auth tables under RLS. Never expose this key in frontend code.
-
-2. Open Supabase SQL Editor and run these files in order:
+Open the Supabase SQL editor and run these files in order:
 
 - [supabase/schema.sql](supabase/schema.sql)
 - [supabase/auth-schema.sql](supabase/auth-schema.sql)
